@@ -1,0 +1,21 @@
+if you wanna modularize routing to seperate folder/files entiry then we can use express router, which we can mount the route to this particular router using middleware in index.js
+
+const bird = require("./routes/birds");
+
+app.use("/birds",birds)
+
+all routs starting with "/birds" will be redirected to the birdRoute file
+
+you can also use middlewares in routes files which can be used in this particular routes file.
+
+
+using 
+res.status(200).json({messgae:"Ok"})
+
+here res.status will return res object and on same project .json will be executed 
+you have to know that we will be mocking you need to know this for some reason 
+
+
+using logging in project using winston in oru project defining were we wanna store the logs, showing on consolde , levels message, defining message of the log 
+
+look into detail for this 
